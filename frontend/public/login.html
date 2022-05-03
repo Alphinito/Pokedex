@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Conexión a API de google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--  Fuente de googole fonts: font-family: 'Signika Negative', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+
+    <!--  Fuente de googole fonts: font-family: 'Secular One', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--  JS  -->
+    <script src="../js/script.js"></script>
+
+    <title>Pokédex - Iniciar sesión</title>
+</head>
+<body>
+    <div class="contenedor">
+        <form action="../../controlador/inicioDeSesion.php" method="post" class="iniciar" id="id_iniciar">
+            <h2 class="encabezado">Iniciar sesion</h2>
+            <label for="correo" class="lb_iniciar"><img class="icono_login" src="../img/correo.png" alt="">
+                <input class="I_loginIniciar" type="email" name="n_correo" id="correo" autocomplete="off">
+            </label>
+            <br>
+            <label for="clave" class="lb_iniciar"><img class="icono_login" src="../img/clave.png" alt="">
+                <input class="I_loginIniciar" type="password" name="n_clave" id="clave">
+            </label>
+            <br>
+            <label for="" class="link" onclick="CrearCuenta()">Crear cuenta</label>
+            <br>
+            <button name="b_iniciar">Ingresar</button>
+        </form>
+        <form action="../../controlador/cerearCuenta.php" method="post" class="crear" id="id_crear">
+            <h2 class="encabezado">Crear cuenta</h2>
+            <label for="cNombre" class="lb_crear">Nombre <br>
+                <input class="I_loginCrear" type="text" id="cNombre" name="n_cNombre">
+            </label>
+            <label for="cApellido" class="lb_crear">Apellido <br>
+                <input class="I_loginCrear" type="text" id="cApellido" name="n_cApellido">
+            </label>
+            <label for="cCorreo" class="lb_crear">Correo <br>
+                <input class="I_loginCrear" type="email" id="cCorreo" name="n_cCorreo">
+            </label>
+            <label for="cClave" class="lb_crear">Contraseña <br>
+                <input class="I_loginCrear" type="text" id="cClave" name="n_cClave">
+            </label>
+            <br>
+            <br>
+            <label for="" class="link" onclick="YaTengoCuenta()">Ya tengo cuenta</label>
+            <br>
+            <br>
+            <button name="b_crear">Crear</button>
+        </form>
+    </div>
+</body>
+</html>

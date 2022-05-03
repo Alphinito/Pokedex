@@ -1,0 +1,15 @@
+CREATE DATABASE pokemon;
+USE pokemon;
+CREATE TABLE `usuarios` (
+  `USU_ID` int(3) NOT NULL,
+  `USU_NOMBRE` varchar(20) NOT NULL,
+  `USU_APELLIDO` varchar(20) NOT NULL,
+  `USU_CORREO` varchar(30) NOT NULL,
+  `USU_CLAVE` varchar(20) NOT NULL,
+  `PRIMER_INICIO` tinyint(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`USU_ID`)
+);
+ALTER TABLE `usuarios`
+  MODIFY `USU_ID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+COMMIT;
+

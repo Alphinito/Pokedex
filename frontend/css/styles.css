@@ -1,0 +1,327 @@
+/*  GENERAL  */
+*{
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #bbbb;
+}
+#id_body{
+    background-image: url(../img/fondo02.jpg);
+    background-position: center;
+    background-position-y: -70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #bbbb;
+    overflow: hidden;
+}
+.contenedor{
+    position: relative;
+    height: 332px;
+    background-color: #eca428;
+    margin: 10% auto;
+    max-width: 500px;
+    width: 70%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.encabezado{
+    font-family: 'Secular One', sans-serif;
+    margin-bottom: 10px;
+}
+.link:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  INICIAR  */
+.iniciar{
+    position: absolute;
+    width: 86%;
+    top: 0;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
+}
+.lb_iniciar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: #d19836;
+    border-radius: 14px;
+}
+.iniciar button{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: gold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.I_loginIniciar{
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    margin: 0 0 0 8px;
+    outline: none;
+}
+
+.icono_login{
+    width: 20px;
+    background-color: gold;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  CREAR  */
+.crear{
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/F-crear-cuenta.png);
+    text-align: center;
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+.lb_crear{
+    width: max-content;
+    align-items: center;
+    margin: 8px;
+    margin-left: 0;
+    display: inline-block;
+}
+.I_loginCrear{
+    background-color: #b36554d2;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+.crear button{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: brown;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  HOME  */
+header{
+    transition: all 1s ease;
+    opacity: 0;
+    height: 65px;
+    background-color: #555555;
+    position: relative;
+}
+.titulo{
+    text-align: center;
+    width: 85%;
+    font-family: 'Signika Negative', sans-serif;
+    color: #dddd;
+    height: 35px;
+    padding: 15px;
+}
+.usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    margin: 4px;
+    border-radius: 20px;
+    width: 15%;
+    max-width: 200px;
+    min-width: 150px;
+    background-color: #d19836;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    padding: 8px;
+}
+.usuario img{
+    height: 45px;
+    margin: 10px;
+}
+.cerrarS{
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: -40px;
+    padding: 10px;
+    width: 80%;
+    background-color: gold;
+    border-radius: 20px;
+}
+.usuario:hover .cerrarS{
+    display: block;
+}
+.cuerpo{
+    transition: all 1s ease;
+    opacity: 0;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nombrePokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    cursor: pointer;
+    color: #dddd;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    padding: 20px;
+    width: 120px;
+    margin: 30px;
+    transition: all .4s ease;
+}
+.nombrePokemon:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  DIALOGOS  */
+.dialogos{
+    position: relative;
+    width: 630px;
+    height: 210px;
+    margin: 30% auto;
+}
+.doctor{
+    z-index: 1;
+    position: absolute;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #555555;
+}
+.NombreDoctor{
+    position: absolute;
+    left: 370px;
+    top: 100px;
+}
+.dialogo{
+    left: 130px;
+    top: 123px;
+    position: absolute;
+    background-color: #555555;
+    color: #bbbbbb;
+    width: 380px;
+    height: max-content;
+    padding: 30px;
+    padding-left: 90px;
+    font-size: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#D2,#D3,#D4,#D5{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  FICHA POKEMON  */
+
+.ficha{
+    position: relative;
+    margin: 8% auto;
+    width: 250px;
+    height: max-content;
+    padding: 25px;
+    background-color: red;
+    border: 3px solid crimson;
+}
+.ficha_volver{
+    position: absolute;
+    top: 0;
+    left: -60px;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px 10px;
+    border: 3px solid crimson;
+    border-radius: 50%;
+}
+.ficha_nombre{
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    background-color: #555555;
+    color: #dddd;
+    font-size: 18px;
+    padding: 8px;
+}
+.ficha_foto{
+    width: 80%;
+    height: 180px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: #dddddd;
+}
+.ficha_habilidades{
+    font-size: 16px;
+    margin: 8px;
+    color: #dddd;
+}
